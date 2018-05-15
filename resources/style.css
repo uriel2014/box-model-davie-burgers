@@ -1,4 +1,4 @@
-/*Universal Body Styling */
+/*OVERALL BODY STYLING*/
 
 body {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_foodlogo.png");
@@ -6,11 +6,16 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
 }
+/* Here we add an image to background, align all elements to the center,
+give a font-size and font-family to the text */
 a {
   text-decoration: none;
 }
+/* Need to ensure that each highlighted portion is not underlined
+by setting equal to text-decoration: none*/
 
-/*Navigation Styling */
+
+/*NAVIGATION STYLING */
 nav {
   text-align: center;
 }
@@ -20,6 +25,8 @@ nav img {
   width: 180px;
   margin: 0 auto;
 }
+/* The margin property will center the image with the given values,
+given that we provide a width.*/
 
 nav span {
   display: block;
@@ -28,12 +35,16 @@ nav span {
   letter-spacing: 2px;
   margin: 10px 0px;
 }
+/*Give each span some stying by giving it some font-weight,
+letter-spacing, setting the margins vertically
+and displying it as a block section.*/
 
 nav a {
   color: #666666;
 }
 
-/* Content Container */
+
+/* CONTENT CONTAINER */
 
 .content {
   width: 100%;
@@ -41,8 +52,11 @@ nav a {
   margin: 10px auto;
   overflow: scroll;
 }
+/* Here we will give the container a full width, a set height,
+and set margins verically and horizontally.
+We will also include an overflow scroll to navigate the content accordingly.*/
 
-/* Content Header */
+/* CONTENT HEADER */
 
 .header {
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/web-101/unit-6/htmlcss1-img_burgerphoto.jpeg");
@@ -50,6 +64,9 @@ nav a {
   background-size: cover;
   height:320px;
 }
+/* Fix the header with an image that will be given a height
+and will positioned at the center and cover the h=whole heading space*/
+
 .header h1 {
   background-color: #05A8AA;
   color: #FFF;
@@ -61,22 +78,28 @@ nav a {
   padding: 20px;
   margin: 0 auto;
 }
+/*Here we add the Heading text to the Heading image.
+First we set a background color, color, font-family, font-size,
+give some font-weight, some line-height. Additional we will fix it up with
+some width, padding space, and center it with the margin properities of
+0 and auto.*/
 
-/*Content Body Section */
+/*CONTENT BODY SECTION*/
 .content .body {
   width: 90%;
   margin: 0 auto;
 }
+/* will give the content a given width and we will set a margin to center.*/
 
 .body p {
   color: #333333;
   font-weight: 100;
   line-height: 34px;
   width: 90%;
-  margin-top: 18px;
+  margin-top: 18px; /* this is to give space between previos element and this element.*/
 }
 
-/* content Button */
+/*CONTENT BUTTON */
 .button {
   border-radius: 4px;
   color: #05A8AA;
@@ -87,7 +110,7 @@ nav a {
   margin: 40px auto;
   border: 1px solid blue;
 }
-
+/*Give the button some stying, nothing very difficult*/
 .button:hover {
   background-color: #05A8AA;
   border: 1px solid #05A8AA;
@@ -122,3 +145,5 @@ ul.nutrition li {
   font-weight: 700;
   letter-spacing: 2px;
 }
+/*All of the nutrition coding is self-explanatory
+and does not need clarification*/
